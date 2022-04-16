@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'semantic-ui-css/semantic.css';
 import './app/layout/style.css';
-import App from './app/layout/App';
-import reportWebVitals from './reportWebVitals';
+import App from './src/app/layout/App'
+import reportWebVitals from './src/reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
