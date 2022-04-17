@@ -9,7 +9,8 @@ interface Props {
     openForm : (id : string ) => void;
 }
 
-export default function ActivityDetails({activity , canselSelcetActivity , openForm} : Props) {
+export default function ActivityDetails({activity , canselSelcetActivity 
+  , openForm } : Props) {
     
     return(
             
