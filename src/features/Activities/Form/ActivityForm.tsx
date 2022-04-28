@@ -13,6 +13,7 @@ export default observer(function ActivityForm () {
         , loading , loadActivity , Loadingintial}= activtystore;
     const {id} = useParams<{id : string}>();
     const history = useHistory();
+    
 
     const [activity , setActivity] = useState({ 
             id : '',
