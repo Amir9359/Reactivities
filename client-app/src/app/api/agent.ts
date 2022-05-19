@@ -18,7 +18,11 @@ axios.interceptors.response.use(async response => {
 }, (error: AxiosError) => {
     const {data, status, config} = error.response!;
     switch (status) {
-        case 400:
+        case 400: 
+            if(typeof data === 'string')
+            {
+                toast.error(data);
+            }
             if (config.method === 'get' && data.errors.hasOwnProperty('id')) {
                 history.push('/not-found');
             }

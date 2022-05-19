@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@types/yup": "^0.29.14"
+  }
+}
