@@ -1,7 +1,7 @@
-import { format } from "date-fns";
 import { makeAutoObservable, runInAction } from "mobx";
-import agent from "../api/agent";
-import { Activity } from "../models/activity";
+import agent from "../../../../client-app/src/app/api/agent";
+import { Activity } from "../../../../client-app/src/app/models/activity";
+import {format} from 'date-fns';
 
 export default class ActivityStore {
     activityRegistry = new Map<string, Activity>();
