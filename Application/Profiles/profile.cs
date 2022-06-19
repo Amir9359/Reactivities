@@ -7,4 +7,5 @@ namespace Application.Profiles
         public string Bio { get; set; }
         public string Image { get; set; }
     }
+
 }

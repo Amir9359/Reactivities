@@ -76,6 +76,7 @@ namespace API.Controllers
         public async Task<ActionResult<UserDto>> GetCurentUser()
         {
             var user = await _userManager.FindByEmailAsync(User?.FindFirstValue(ClaimTypes.Email));
+            if (user == null) return Redirect("/");
             return  CreateUsreObject(user);
         }
 
