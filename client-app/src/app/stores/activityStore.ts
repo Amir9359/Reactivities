@@ -4,7 +4,7 @@ import { Activity, ActivityFormValues } from "../../../../client-app/src/app/mod
 import {format} from 'date-fns';
 import { store } from "./store";
 import { Profile } from "../models/profile";
-import { profile } from "console";
+ 
 
 export default class ActivityStore {
     activityRegistry = new Map<string, Activity>();
